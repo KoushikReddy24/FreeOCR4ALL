@@ -8,6 +8,11 @@ FreeOCR4ALL is a free online OPTICAL CHARACTER RECOGNITION (OCR) web tool that i
 
 ## Demo
 
+You can view this at 
+https://freeocr4all.onrender.com
+
+But it has a problem with pytesseract and the path
+
 
 https://github.com/KoushikReddy24/FreeOCR4ALL/assets/124913094/2e50fcbf-0e51-46d1-a029-9b7f4aa738f5
 
