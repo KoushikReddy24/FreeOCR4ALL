@@ -1,0 +1,1 @@
+# FreeOCR4ALL
