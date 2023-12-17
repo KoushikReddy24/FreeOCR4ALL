@@ -9,7 +9,11 @@ FreeOCR4ALL is a free online OPTICAL CHARACTER RECOGNITION (OCR) web tool that i
 ## Demo
 
 
-https://github.com/KoushikReddy24/FreeOCR4ALL/assets/124913094/b65ceef3-00c0-427d-b7d3-63958378f34a
+https://github.com/KoushikReddy24/FreeOCR4ALL/assets/124913094/2e50fcbf-0e51-46d1-a029-9b7f4aa738f5
+
+
+
+
 
 https://github.com/KoushikReddy24/FreeOCR4ALL/files/13623680/ocr.zip
 
