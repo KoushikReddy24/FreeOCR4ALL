@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Display Page{% endblock %}
+
+{% block content %}
+<h2 style="color: 11999E;">Extracted Text!!</h2>
+
+<textarea style="color:black ;" id="copyTextArea" rows="20" cols="100" readonly>
+    {% for text in content %}
+        {{text}}
+    {% endfor %}
+</textarea>
+
+<button style="font-size:31px;
+font-family:Trebuchet MS;
+width:140px;
+height:50px;
+border-width:1px;
+color:#11999E;
+border-color:#dcdcdc;
+font-weight:bold;
+border-top-left-radius:6px;
+border-top-right-radius:6px;
+border-bottom-left-radius:6px;
+border-bottom-right-radius:6px;
+box-shadow:inset 0px 1px 0px 0px #ffffff;
+text-shadow:inset 0px 1px 0px #ffffff;
+background:linear-gradient(#ffffff, #f6f6f6);" onclick="copyText()">Copy</button>
+
+<script>
+    function copyText() {
+        /* Get the text area */
+        var copyText = document.getElementById("copyTextArea");
+
+        /* Select the text area content */
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text to the clipboard */
+        document.execCommand("copy");
+
+        /* Alert the copied text */
+        alert("Text copied: " + copyText.value);
+    }
+</script>
+
+
+<p style="padding-left: 0; color:11999E ; font-size: 20px;">Copy the text above.</p>
+
+
+<div style="background-color: black; bottom: 0;">
+    <div style="display: flex;justify-content: space-around; background-color: black; padding-bottom: 10px; bottom: 0;">
+        <div style="width: 30%; text-align: left; padding-top: 10px;">
+            <h1 style="color: #11999E;">About</h1>
+            <p style="color: E4F9F6; font-size: 20px; margin-top: 20px;">FreeOCR4ALL is a free online OPTICAL CHARATCER
+                RECOGNITION (OCR) web tool that is used to extract text from images and pdf documents</p>
+        </div>
+        <div style="width: 40%; padding-top: 10px;">
+            <h1 style="color: #11999E; ">Follow Me</h1>
+            <a style="color: E4F9F6; text-decoration: none; margin: 10px; font-size: 20px;" href="">LinkedIn</a>
+            <a style="color: E4F9F6; text-decoration: none; margin: 10px;font-size: 20px;" href="">GitHub</a>
+            <a style="color: E4F9F6; text-decoration: none; margin: 10px; font-size: 20px;" href="">Instagram</a>
+        </div>
+
+    </div>
+    <div style=" background-color: black; ">
+        <h4 style="color: #11999E;">Copyright © All Rights reserved by FreeOCR4ALL</h4>
+
+    </div>
+</div>
+{% endblock %}

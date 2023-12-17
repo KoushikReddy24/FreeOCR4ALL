@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% block title %}Home Page{% endblock %}
+
+
+{% block content %}
+<h1 style="text-align: center; font-family: 'Sacramento', cursive; color: #11999E; padding: 40px;font-size: 90px;">
+    FreeOCR4ALL</h1>
+<div>
+    <h4 style="font-family: 'Roboto Condensed', sans-serif; color: #11999E;">Click on "Choose Files" to choose files
+        <br> Click on "Submit" to extract text
+    </h4>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="images[]" id="fileInput" multiple accept="image/*">
+        <input type="submit" value="submit" id="">
+    </form>
+</div>
+<hr style=" align-content: center;border-style: dotted none none none; border-width: 2px;">
+<div>
+    <div style="display: flex; align-items: center; justify-content: space-around; ">
+
+        <div style="width: 40%;padding-left: 40px; padding-top: 0; text-align: left; ">
+            <h1 style="color: black; color: #11999E;">Our Features...</h1>
+            <ul>
+                <li style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Best Free OCR online tool
+                    available</li>
+                <li style="font-family: Arial, Helvetica, sans-serif;font-size: 25px;">No Daily Limit</li>
+                <li style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Any type of picture</li>
+                <li style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Copy the Text</li>
+            </ul>
+        </div>
+
+        <div style="width: 30%; padding: 0px;">
+            <img src="https://cdn.sick.com/media/ZOOM/2/82/782/IM0077782.png" alt="OCR Image"
+                style="height: 400px; width: 400px;">
+        </div>
+
+    </div>
+
+    <hr>
+    <div style="display: flex; align-items: center; justify-content: space-around; "">
+        <div>
+            <img style= " padding-left: 50px; padding-right: 0; width: 700px; height: 400px"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvE63raT8XLh1DvCiZQaVVqVPDICyXFQaoHw&usqp=CAU"
+        alt="">
+
+    </div>
+
+    <div style="text-align: left; margin: 50px; padding-left: 50px; position: relative;">
+        <h1 style="font-family: Arial, Helvetica, sans-serif; color: #11999E;;">How to use FreeOCR4ALL</h1>
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;">We are going to discuss that how
+            you
+            can use this best OCR online free tool to extract text from images:</p>
+        <ul>
+            <li style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Click on "Select" button
+            </li>
+            <li style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Select as many images as
+                possible</li>
+            <li style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Click on "Submit" button
+            </li>
+            <li style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Your text is generated and
+                shown
+                you in next page</li>
+            <li style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">You can copy that text</li>
+        </ul>
+
+    </div>
+</div>
+<hr>
+<div style="text-align: center; margin: 50px;  padding-left: 80px; position: relative;">
+    <h1 style="font-family: Arial, Helvetica, sans-serif; color: #11999E;;">What is FreeOCR4ALL ?</h1>
+    <p style="text-align: center; font-family: Arial, Helvetica, sans-serif;font-size: 25px; padding:40px 50px 10px 0px;">FreeOCR4ALL
+        is a powerful and user-friendly online Optical Character Recognition (OCR) tool that allows you to
+        effortlessly extract and edit text from images or scanned documents, providing a seamless and free solution
+        for all your OCR needs.</p>
+</div>
+<hr>
+<div style="text-align: center; margin: 50px; padding-left: 80px; position: relative;">
+    <h1 style="font-family: Arial, Helvetica, sans-serif;color: #11999E;;">How does FreeOCR4ALL work ??</h1>
+    <p style="text-align: center; font-family: Arial, Helvetica, sans-serif; border: 30px; font-size: 25px; padding:40px 50px 10px 0px;">
+        FreeOCR4ALL works by leveraging advanced Optical Character Recognition (OCR) technology to analyze images or
+        scanned documents. It accurately identifies and extracts text, enabling users to edit, format, and translate
+        the content effortlessly.</p>
+</div>
+
+
+<div style="display: flex;justify-content: space-around; background-color: black; padding-bottom: 10px;">
+    <div style="width: 30%; text-align: left; padding-top: 10px;">
+        <h1 style="color: #11999E;">About</h1>
+        <p style="color: E4F9F6; font-size: 20px; margin-top: 20px;">FreeOCR4ALL is a free online OPTICAL CHARATCER
+            RECOGNITION (OCR) web tool that is used to extract text from images and pdf documents</p>
+    </div>
+    <div style="width: 40%; padding-top: 10px;">
+        <h1 style="color: #11999E; ">Follow Me</h1>
+        <a style="color: E4F9F6; text-decoration: none; margin: 10px; font-size: 20px;" href="">LinkedIn</a>
+        <a style="color: E4F9F6; text-decoration: none; margin: 10px;font-size: 20px;" href="">GitHub</a>
+        <a style="color: E4F9F6; text-decoration: none; margin: 10px; font-size: 20px;" href="">Instagram</a>
+    </div>
+
+</div>
+<div style=" background-color: black;">
+    <h4 style="color: #11999E; bottom: 0;">Copyright © All Rights reserved by FreeOCR4ALL</h4>
+
+</div>
+
+
+
+</div>
+
+{% endblock %}
