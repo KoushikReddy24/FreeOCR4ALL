@@ -14,7 +14,8 @@ https://freeocr4all.onrender.com
 But it has a problem with pytesseract and the path
 
 
-https://github.com/KoushikReddy24/FreeOCR4ALL/assets/124913094/2e50fcbf-0e51-46d1-a029-9b7f4aa738f5
+
+https://github.com/KoushikReddy24/FreeOCR4ALL/assets/124913094/fb33fd9b-c2e1-49f4-84c9-2d614a14cda6
 
 
 
